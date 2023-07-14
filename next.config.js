@@ -10,7 +10,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["s.gravatar.com"],
+    // domains: ["s.gravatar.com"],
+    //from error messsage as address changed we used following lh3.....
+    domains: ["lh3.googleusercontent.com"],
   },
 };
 
