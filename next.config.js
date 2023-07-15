@@ -6,7 +6,7 @@
 // module.exports = nextConfig
 
 //followin from gpt3.5 tom code as we were getting some error
-/** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */ //removing comments shows @type as some error
 const nextConfig = {
   reactStrictMode: true,
   images: {
