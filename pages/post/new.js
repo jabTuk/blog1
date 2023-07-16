@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function NewPost(props) {
   console.log("NEW POST PROPS: ", props);
-  const [postContent, setPostContent] = useState();
+  const [postContent, setPostContent] = useState("hi"); //hi gets over written whan replay comes from generatePost.js
   const handleClick = async () => {
     const response = await fetch("/api/generatePost", {
       method: "POST",

@@ -92,7 +92,7 @@ export default async function handler(req, res) {
   const metaDescription =
     metaDescriptionResult.data.choices[0]?.message.content;
 
-  console.log("POST CONTENT: ", postContent);
+  console.log("POST CONTENT from generatePost.js server side: ", postContent);
   console.log("TITLE: ", title);
   console.log("META DESCRIPTION: ", metaDescription);
 
