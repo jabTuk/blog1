@@ -16,8 +16,9 @@ export default async function handler(req, res) {
     apiKey: process.env.OPENAI_API_KEY,
   });
   const openai = new OpenAIApi(config);
-  const topic = "Top 5 tips for kite flying";
-  const keywords = "first time flying, common care, best size";
+  const { topic, keywords } = req.body;
+  // const topic = "Top 5 tips for kite flying";
+  // const keywords = "first time flying, common care, best size";
   const postContentResult = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
     messages: [
