@@ -22,7 +22,6 @@ export default function NewPost(props) {
       });
       const json = await response.json();
       console.log("RESULT: ", json);
-      // console.log(json.parse(postContent).JSON.stringify);
 
       setPostContent(JSON.stringify(json.post.postContent));
       // if (json?.postId) {
