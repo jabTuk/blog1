@@ -6,7 +6,7 @@ export default function NewPost(props) {
   console.log("NEW POST PROPS: ", props);
   const [postContent, setPostContent] = useState("hi"); //hi gets over written whan replay comes from generatePost.js
   // const router = useRouter();
-  const [topic, setTopic] = useState("horn");
+  const [topic, setTopic] = useState("");
   const [keywords, setKeywords] = useState("");
   const [generating, setGenerating] = useState(false);
   const handleSubmit = async (e) => {

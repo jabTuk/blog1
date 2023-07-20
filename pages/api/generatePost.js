@@ -127,3 +127,6 @@ export default async function handler(req, res) {
     // postId: post.insertedId,
   });
 }
+// res.status(200).json({
+//   postId: post.insertedId,
+//   post: JSON.parse(response.data.choices[0]?.text.split("\n").join("")),
