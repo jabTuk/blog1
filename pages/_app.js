@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { DM_Sans, DM_Serif_Display } from "@next/font/google";
-import { UserProvider } from "@auth0/nextjs-auth0/client";
+// import { UserProvider } from "@auth0/nextjs-auth0/client";
 
 const dmSans = DM_Sans({
   weight: ["400", "500", "700"],
@@ -17,13 +17,11 @@ function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);
 
   return (
-    <UserProvider>
-      <main
-        className={"${dmSans.variable} ${dmSerifDisplay.variable} font-body"}
-      >
-        {getLayout(<Component {...pageProps} />, pageProps)}
-      </main>
-    </UserProvider>
+    // <UserProvider>
+    <main className={"${dmSans.variable} ${dmSerifDisplay.variable} font-body"}>
+      {getLayout(<Component {...pageProps} />, pageProps)}
+    </main>
+    // </UserProvider>
   );
 }
 export default MyApp;

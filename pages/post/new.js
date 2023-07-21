@@ -1,4 +1,4 @@
-import { withPageAuthRequired } from "@auth0/nextjs-auth0";
+// import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 import { AppLayout } from "../../components/AppLayout";
 import { useState } from "react";
 
@@ -72,11 +72,12 @@ export default function NewPost(props) {
 NewPost.getLayout = function getLayout(page, pageProps) {
   return <AppLayout {...pageProps}>{page}</AppLayout>;
 };
-export const getServerSideProps = withPageAuthRequired(() => {
+// export const getServerSideProps = withPageAuthRequired(() => {
+export const getServerSideProps = () => {
   return {
     props: {},
   };
-});
+};
 
 // import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 // import { AppLayout } from "../../components/AppLayout";
